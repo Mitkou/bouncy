@@ -1,0 +1,58 @@
+.header {
+  height: 100vh;
+  position: relative;
+  padding: 100px 40px;
+  background: url('../img/header/header-hero.jpg') 50% 50% no-repeat ;
+  background-size: cover;
+  color: #fff;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu {
+    font-size: 16px;
+    list-style: none;
+    &-item {
+      display: inline-block;
+      line-height: 33px;
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      &.is-active {
+        padding: 8.5px 20px;
+        border-radius: 16.5px;
+        border: solid 1px #ffffff;
+      }
+    }
+  }
+  &__info {
+    width: 580px;
+    margin-top: 10%;
+    & .info-title {
+      font-size: 35px;
+      color: #fff;
+      letter-spacing: 7px;
+    }
+    & .info-text {
+      font-size: 16px;
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+.scroll {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  display: block;
+  bottom: 10%;
+  left: calc(50% - 18px);
+  text-indent: -9999px;
+  background: url('../img/header/scroll.png') 50% 50% no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,79 @@
+// Libs
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300,400');
+
+@import 'variables';
+@import 'blocks/container.scss';
+@import 'sections/header';
+@import 'sections/portfolio';
+@import 'sections/team';
+@import 'sections/contact';
+@import 'sections/testimonials';
+@import 'sections/location';
+@import 'sections/footer';
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 14px;
+  color: $textColor;
+}
+
+//Testimonials
+.testimonials {
+  padding: 80px 110px 100px;
+  background: #f3f3f3;
+  &__info {
+    margin-bottom: 60px;
+  }
+}
+
+.testimonial {
+  display: flex;
+  width: 1300px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  &-wrap {
+    background: #fff;
+    padding: 60px 120px 60px 100px;
+  }
+  &__photo {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    text-indent: -9999px;
+    background: url('../img/testimonials/testimonial.jpg') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &__info {
+    width: 800px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+  }
+  &__author {
+    display: block;
+    text-transform: uppercase;
+    color: $colorTurquoise;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+  }
+  &__position {
+    text-transform: uppercase;
+    color: $colorDarkGrey;
+  }
+}

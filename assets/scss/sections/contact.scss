@@ -1,0 +1,26 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+  background: url('../img/contact/contact.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  &__text {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    color: #fff;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12.5px 30px;
+    border-radius: 16.5px;
+    border: solid 1px #ffffff;
+  }
+}

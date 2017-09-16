@@ -1,0 +1,79 @@
+.team {
+  padding: 80px 225px 100px 180px;
+  &__info {
+    margin-bottom: 60px;
+  }
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__photo {
+    width: 285px;
+    height: 364px;
+    text-indent: -9999px;
+    background: url('../img/team/team.jpg') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &__description {
+    width: 375px;
+    display: flex;
+    margin-right: 40px;
+    flex-direction: column;
+    text-align: right;
+  }
+  &__name {
+    display: block;
+    font-size: 20px;
+    color: $headersColor;
+    letter-spacing: 0.8px;
+    line-height: 35px;
+  }
+  &__position {
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 29px;
+  }
+  &__info {
+    letter-spacing: 0.7px;
+    line-height: 25px;
+  }
+  &-wrap {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 8%;
+        right: 0;
+        width: 4px;
+        height: 42px;
+        background-color: $colorTurquoise;
+    }
+  }
+}
+
+.slider-nav {
+  margin-left: calc(50% - 30px);
+}
+
+.slider-nav button {
+  width: 10px;
+  height: 10px;
+  margin: 50px 10px 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  font-size: 0;
+  background: #fff;
+  border: solid 1px $colorTurquoise;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+button.active-slider {
+  background: $colorTurquoise;
+}
